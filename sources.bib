@@ -1,0 +1,1383 @@
+
+%% Saved with string encoding Unicode (UTF-8)
+
+
+
+@article{Agarwal06ECCV,
+	Author = {A. Agarwal and B. Triggs},
+	Date-Added = {2008-02-23 20:24:52 -0500},
+	Date-Modified = {2008-02-23 20:25:29 -0500},
+	Journal = {European Conference on Computer Vision},
+	Keywords = {model object},
+	Title = {Hyperfeatures- Multilevel local coding for visual recognition},
+	Year = {2006}}
+
+@article{Aggarwal95ACM,
+	Annote = {In model-based object recognition survey},
+	Author = {J. K. Aggarwal},
+	Date-Added = {2008-02-23 20:11:29 -0500},
+	Date-Modified = {2008-02-23 20:16:15 -0500},
+	Journal = {ACM Computing Survey},
+	Keywords = {model object},
+	Month = {March},
+	Number = {1},
+	Pages = {5-43},
+	Title = {A model-based object recognition in dense range image},
+	Volume = {25},
+	Year = {1995}}
+
+@article{Ballard81PR,
+	Author = {D. H. Ballard},
+	Date-Added = {2008-02-24 14:32:08 -0500},
+	Date-Modified = {2008-02-24 16:17:44 -0500},
+	Journal = {Pattern Recognition},
+	Keywords = {model object},
+	Title = {Generalizing the {H}ough transform to detect arbitrary shapes},
+	Year = {1981}}
+
+@article{Bay06ECCV,
+	Author = {H. Bay and T. Tuytelaars and L. Van Gool},
+	Date-Added = {2008-02-23 09:55:44 -0500},
+	Date-Modified = {2008-02-24 10:17:15 -0500},
+	Journal = {European Conference on Computer Vision},
+	Keywords = {descriptor},
+	Title = {{SURF}: Speeded Up Robust Features},
+	Year = {2006}}
+
+
+@conference{Bibby07RSS,
+	Author = {C. Bibby and I. Reid},
+	Booktitle = {Robotics: Science and Systems},
+	Date-Added = {2010-02-11 13:42:49 -0500},
+	Date-Modified = {2010-02-11 13:44:26 -0500},
+	Keywords = {SLAM},
+	Title = {Simultaneous Localisation and Mapping in Dynamic Environments ({SLAMIDE}) with Reversible Data Association},
+	Year = {2007}}
+
+@article{Biederman87PsychologicalReview,
+	Annote = {This is the theory that people represent objects to be recognized by a set of conic regions called "geons".  There are 36 types of these geons which can be detected robustly from edge curvature, collinearity, symmetry, parallelism, and cotermination.  Object perception when only a few of the supporting geons are detected is still robust leading this technique to work well even in the presence of strong occlusion or image noise},
+	Author = {I. Biederman},
+	Date-Added = {2008-02-27 16:18:29 -0500},
+	Date-Modified = {2008-02-27 16:19:35 -0500},
+	Journal = {Psychological Review},
+	Keywords = {model object},
+	Title = {Recognition-by-Components: a theory of human image understanding},
+	Year = {1987}}
+
+@inproceedings{Blanco06ICRA,
+	Abstract = {Recently, hybrid maps that combine metric and topological world information have been proposed as a powerful representation of mobile robot environments. Among others, these maps are of special interest for efficiently managing large-scale environments, and for accurate localization. For achieving that, local geometric maps are stored in the nodes of a graph-based global map. In this paper we present a novel approach for automatically obtaining those local maps from observations. The method considers the space sensed in each observation as a node of a graph with arcs representing the space overlap between observations. The recursive partition (cut) of this graph produces groups of strongly connected nodes from which consistent local maps for accurate localization are derived. The proposed partition technique is well-grounded in the spectral graph theory of, and it is formulated for any type of sensor observation. We depict an implementation for grouping 2D laser scans, and show experimental results with real data that demonstrate the performance of the method
+},
+	Annote = {This paper uses NGC to partition a full SLAM solution according to minimizing the "SSO" : Sensed Space Overlap.  This metric is how much of the sensor is overlapping with the other pose's sensor reading, how redundant is this other pose.  It has a value of 1 on the same pose, and it is symmetric and nonnegative.  It is used as the metric to set the values of the edge weights for NGC (normalised graph cuts).},
+	Author = {Blanco, J. L. and Gonzales, J. and Fernandez-Madrigal, J. A.},
+	Date-Added = {2009-02-16 17:29:21 -0500},
+	Date-Modified = {2009-02-16 18:08:41 -0500},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {SLAM},
+	Month = {May},
+	Pages = {818-823},
+	Title = {Consistent observation grouping for generating metric-topological maps that improves robot localization},
+	Year = {2006}}
+
+@inproceedings{Blanco08ITOR,
+	Abstract = {This paper introduces a new approach to simultaneous localization and mapping (SLAM) that pursues robustness and accuracy in large-scale environments. Like most successful works on SLAM, we use Bayesian filtering to provide a probabilistic estimation that can cope with uncertainty in the measurements, the robot pose, and the map. Our approach is based on the reconstruction of the robot path in a hybrid discrete-continuous state space, which naturally combines metric and topological maps. There are two fundamental characteristics that set this paper apart from previous ones: 1) the use of a unified Bayesian inference approach both for the metrical and the topological parts of the problem and 2) the analytical formulation of belief distributions over hybrid maps, which allows us to maintain the spatial uncertainty in large spaces more accurately and efficiently than in previous works. We also describe a practical implementation that aims for real-time operation. Our ideas have been validated by promising experimental results in large environments (up to 30 000 m2, a 2 km robot path) with multiple nested loops, which could hardly be managed appropriately by other approaches.},
+	Annote = {Introduces the Hybrid Metric-Topological data structure to reason about topological information such as pose sequence areas, and metric information such as feature locations.  They appear to have abandoned the normalized graph cuts.},
+	Author = {Blanco, J. L. and Fernandez-Madrigal, J. A. and Gonzales, J.},
+	Booktitle = {IEEE Transactions on Robotics},
+	Date-Added = {2009-02-16 18:39:26 -0500},
+	Date-Modified = {2009-07-29 11:55:14 -0400},
+	Keywords = {SLAM},
+	Month = {April},
+	Number = {2},
+	Title = {Toward a Unified {B}ayesian Approach to Hybrid Metric-Topological {SLAM}},
+	Volume = {24},
+	Year = {2008}}
+
+
+@article{Bosse03ICRA,
+	Author = {M. Bosse and P. Newman and J. Leonard and S. Teller},
+	Date-Added = {2008-09-13 15:56:30 -0400},
+	Date-Modified = {2008-09-14 13:50:03 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {Hierarchical SLAM},
+	Title = {An \emph{Atlas} Framework for Scalable Mapping},
+	Year = {2003}}
+
+@book{Bradski08book,
+	Author = {Bradski, G. and Kaehler, A.},
+	Date-Added = {2010-03-09 09:18:44 -0500},
+	Date-Modified = {2010-03-09 09:19:40 -0500},
+	Publisher = {O'Reilly Media, Inc.},
+	Title = {Learning OpenCV: Computer vision with the OpenCV library},
+	Year = {2008}}
+
+
+@inbook{Burgard08HOR,
+	Author = {W. Burgard and M. Hebert},
+	Chapter = {36, World Modeling},
+	Date-Added = {2009-09-15 22:57:04 -0400},
+	Date-Modified = {2009-09-15 23:02:28 -0400},
+	Editor = {B. Siciliano and O. Khatib},
+	Publisher = {Springer},
+	Title = {Springer Handbook in Robotics},
+	Year = {2008}}
+
+
+@InProceedings{Burgard98AI,
+	author = {Wolfram Burgard and Armin B. Cremers and Dieter Fox and Dirk H{\"a}hnel and Gerhard Lakemeyer and Dirk Schulz and Walter Steiner and Sebastian Thrun},
+	title = "Experiences with an Interactive Museum Tour-Guide Robot",
+	journal = "Artificial Intelligence",
+	year = "1998",
+	volume = "114",
+	pages = "1--2",
+	booktitle = "Artificial Intelligence"
+}
+
+@article{Califano94PAMI,
+	Author = {A. Califano and R. Mohan},
+	Date-Added = {2008-02-23 20:23:11 -0500},
+	Date-Modified = {2008-02-23 20:24:13 -0500},
+	Journal = {Pattern Analysis and Machine Intelligence},
+	Keywords = {model object},
+	Month = {April},
+	Number = {4},
+	Title = {Multidimensional indexing for recognizing visual shapes},
+	Volume = {16},
+	Year = {1994}}
+
+@article{Castle07ICRA,
+	Author = {Castle, R. O. and Gawley, D. J. and Klein, G. and Murray, D.W.},
+	Date-Added = {2010-03-11 00:41:09 -0500},
+	Date-Modified = {2010-03-11 00:42:40 -0500},
+	Journal = {International Conference on Robotics and Automation},
+	Title = {Towards simultaneous recognition, localization and mapping for hand-held and wearable cameras},
+	Year = {2007}}
+
+
+@article{Chatila85ICRA,
+	Annote = {successful use of EKF for mobile robot localization},
+	Author = {R. Chatila and J.P. Laumond},
+	Date-Added = {2008-09-14 14:48:58 -0400},
+	Date-Modified = {2008-09-14 14:49:46 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {SLAM},
+	Title = {Position referencing and consistent world modeling for mobile robots},
+	Year = {1985}}
+
+@incollection{Christensen99ISRR,
+  address = {Heidelberg},
+  author = {H.I. Christensen and L. Petersson and M. Eriksson},
+  booktitle = {ISRR-99},
+  date-added = {2008-07-19 10:40:32 -0400},
+  date-modified = {2008-07-19 10:40:32 -0400},
+  editor = {J. Hollerbach and D. Koditschek},
+  month = oct,
+  pdf = {hic-papers/isrr-99.pdf},
+  publisher = {Springer Verlag},
+  title = {Mobile Manipulation: Getting a grip?},
+  year = 1999
+}
+
+@article{Clemente07RSS,
+	Author = {L. A. Clemente and A. J. Davison and I. Reid and J. Neira and J. D. Tard\'{o}s},
+	Date-Added = {2008-09-13 16:39:35 -0400},
+	Date-Modified = {2009-07-29 12:00:20 -0400},
+	Journal = {Robotics: Science and Systems},
+	Keywords = {Visual SLAM},
+	Title = {Mapping large loops with a single hand-held camera},
+	Year = {2007}}
+
+@article{Crowley89ICRA,
+	Annote = {This is an example of using the EKF for mobile robot localization},
+	Author = {J. Crowley},
+	Date-Added = {2008-09-14 14:46:58 -0400},
+	Date-Modified = {2008-09-14 14:47:57 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {SLAM},
+	Title = {World modeling and position estimation for a mobile robot using ultra-sonic ranging},
+	Year = {1989}}
+
+@article{Dalal05CVPR,
+	Author = {Dalal, N. and Triggs, B.},
+	Date-Added = {2010-03-06 19:08:19 -0500},
+	Date-Modified = {2010-03-06 19:11:05 -0500},
+	Journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+	Keywords = {appearance object},
+	Pages = {866},
+	Title = {Histograms of oriented gradients for human detection},
+	Year = {2005}}
+
+@article{Davis04TOMS,
+	Author = {Davis, T.A. and Gilbert, J.R. and Larimore, S.I. and Ng, E.G.},
+	Date-Added = {2010-03-06 20:23:15 -0500},
+	Date-Modified = {2010-03-06 20:41:56 -0500},
+	Journal = {ACM Transactions on Mathematical Software (TOMS)},
+	Keywords = {SAM},
+	Title = {Algorithm 836: {COLAMD}, a column approximate minimum degree ordering algorithm},
+	Year = {2004}}
+
+@article{Davison02PAMI,
+	Author = {A. J. Davison and D. W. Murray},
+	Date-Added = {2008-09-15 15:51:19 -0400},
+	Date-Modified = {2008-09-15 15:52:07 -0400},
+	Journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	Keywords = {Visual SLAM},
+	Title = {Simultaneous Localisation and Map-Building Using Active Vision},
+	Year = {2002}}
+
+
+
+@article{Davison03ICCV,
+	Author = {A. J. Davison},
+	Date-Added = {2008-09-13 15:33:50 -0400},
+	Date-Modified = {2008-09-13 15:34:32 -0400},
+	Journal = {International Conference on Computer Vision},
+	Keywords = {Visual SLAM},
+	Title = {Real-Time Simultaneous Localisation and Mapping with a Single Camera},
+	Year = {2003}}
+
+@article{Davison07PAMI,
+	Author = {A. J. Davison and I. Reid and N. Molton and O. Stasse},
+	Date-Added = {2008-09-13 15:31:43 -0400},
+	Date-Modified = {2008-09-14 23:04:43 -0400},
+	Journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	Keywords = {Visual SLAM},
+	Title = {{MonoSLAM}: Real-Time Single Camera {SLAM}},
+	Year = {2007}}
+
+@phdthesis{Davison98PHD,
+	Author = {A. J. Davison},
+	Date-Added = {2008-09-15 15:54:09 -0400},
+	Date-Modified = {2008-09-15 15:55:05 -0400},
+	Keywords = {Visual SLAM},
+	School = {University of Oxford},
+	Title = {Mobile Robot Navigation Using Active Vision},
+	Type = {Ph.D. Thesis},
+	Year = {1998}}
+
+
+@article{DavisonWWWSceneLib,
+	Author = {A. J. Davison},
+	Date-Added = {2008-09-13 15:37:05 -0400},
+	Date-Modified = {2008-09-14 23:05:12 -0400},
+	Journal = {http://www.doc.ic.ac.uk/~ajd/Scene/index.html},
+	Keywords = {Visual SLAM},
+	Title = {{SceneLib} Homepage},
+	Url = {http://www.doc.ic.ac.uk/~ajd/Scene/index.html},
+	Urldate = {2006},
+	Bdsk-Url-1 = {http://www.doc.ic.ac.uk/~ajd/Scene/index.html}}
+
+
+@InProceedings{Dellaert04AAAI,
+	author = "Frank Dellaert and David Bruemmer",
+	title = "Semantic {SLAM} for collaborative cognitive workspaces",
+	booktitle = "In AAAI Fall Symposium Series",
+	year = "2004"
+}
+
+@conference{Dellaert05RSS,
+	Author = {F. Dellaert},
+	Booktitle = {Robotics: Science and Systems},
+	Date-Added = {2008-09-13 14:41:18 -0400},
+	Date-Modified = {2008-09-14 23:02:58 -0400},
+	Keywords = {SAM},
+	Title = {Square Root {SAM}: Simultaneous Localization and Mapping via Square Root Information Smoothing},
+	Year = {2005}}
+
+
+@article{Dellaert06IJRR,
+	Author = {F. Dellaert and M. Kaess},
+	Date-Added = {2008-09-13 14:38:23 -0400},
+	Date-Modified = {2008-09-14 23:03:06 -0400},
+	Journal = {International Journal of Robotics Research},
+	Keywords = {SAM},
+	Title = {Square Root {SAM}: Simultaneous Localization and Mapping via Square Root Information Smoothing},
+	Year = {2006}}
+
+@inproceedings{Diankov08Humanoid,
+   author = "R. Diankov and S. Srinivasa and D. Ferguson and J. Kuffner",
+   title = "Manipulation Planning with Caging Grasps",
+   booktitle = "IEEE International Conference on Humanoid Robots",
+   month = "December",
+   year = "2008"
+}
+
+@Article{Dongsung94IVC,
+	title = "A Method for Recognition and Localization of Generic Objects for Indoor Navigation",
+	author = "Dongsung Kim and Ramakant Nevatia",
+	journal = "Image and Vision Computing",
+	pages = "729--743",
+	volume = "16",
+	year = "1994"
+}
+
+@article{Durrant-Whyte06bRAM,
+	Author = {T. Bailey and H. Durrant-Whyte},
+	Date-Added = {2008-09-14 13:33:12 -0400},
+	Date-Modified = {2008-09-14 23:03:41 -0400},
+	Journal = {Robotics and Automation Magazine},
+	Keywords = {SLAM},
+	Month = {September},
+	Title = {Simultaneous Localisation and Mapping {(SLAM)}: Part {II} State of the Art},
+	Year = {2006}}
+
+
+@article{Durrant-Whyte06RAM,
+	Author = {H. Durrant-Whyte and T. Bailey},
+	Date-Added = {2008-09-14 13:30:24 -0400},
+	Date-Modified = {2008-09-14 23:04:02 -0400},
+	Journal = {Robotics and Automation Magazine},
+	Keywords = {SLAM},
+	Month = {June},
+	Title = {Simultaneous Localisation and Mapping {(SLAM)}: Part {I} The Essential Algorithms},
+	Year = {2006}}
+
+
+
+@book{Edelman99MIT,
+	Author = {S. Edelman},
+	Date-Added = {2008-02-24 09:49:48 -0500},
+	Date-Modified = {2008-02-24 09:50:30 -0500},
+	Keywords = {bookshelf},
+	Publisher = {MIT},
+	Title = {Representation and recognition in vision},
+	Year = {1999}}
+
+
+@conference{Edsinger06ICHR,
+	Author = {Edsinger, A. and Kemp, C.C.},
+	Booktitle = {Humanoid Robots, 2006 6th IEEE-RAS International Conference on},
+	Date-Added = {2009-07-12 14:02:39 -0400},
+	Date-Modified = {2009-07-12 14:03:30 -0400},
+	Pages = {102--109},
+	Title = {{Manipulation in human environments}},
+	Year = {2006}}
+
+
+@Article{Ekvall07IJIERRAI,
+	author = "Staffan Ekvall and Danica Kragic and Patric Jensfelt",
+	title = "Object Detection and Mapping for Service Robot Tasks",
+	journal = "Robotica: International Journal of Information, Education and Research in Robotics and Artificial Intelligence",
+	year = 2007,
+	volume = 25,
+	number = 2,
+	pages = "175--187",
+	month = "March/April",
+	annote = "Ed. Pedro J. Sanz"
+}
+
+@article{Estrada05TRO,
+	Author = {C. Estrada and J. Neira and J. D. Tard\'{o}s},
+	Date-Added = {2008-09-14 13:50:09 -0400},
+	Date-Modified = {2009-07-29 11:59:51 -0400},
+	Journal = {IEEE Transactions on Robotics},
+	Keywords = {Hierarchical SLAM},
+	Month = {August},
+	Number = {4},
+	Pages = {588-596},
+	Title = {Hierarchical {SLAM}: Real-Time Accurate Mapping of Large Environments},
+	Volume = {21},
+	Year = {2005}}
+
+@article{Ettinger87AITR,
+	Author = {G. J. Ettinger},
+	Date-Added = {2008-02-23 20:25:41 -0500},
+	Date-Modified = {2008-02-23 20:27:50 -0500},
+	Journal = {AITR},
+	Keywords = {model object},
+	Title = {Large hierarchical object recognition using libraries of parameterized model sub-parts},
+	Year = {1987}}
+
+@article{Fidler06CVPR,
+	Annote = {first paper, what, where, orientation thing, with the minimum description length principle},
+	Author = {S. Fidler and G. Berginc and A. Leonardis},
+	Date-Added = {2008-02-23 20:52:49 -0500},
+	Date-Modified = {2008-02-23 20:54:02 -0500},
+	Journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+	Keywords = {model object},
+	Title = {Hierarchical statistical learning of generic parts of object structure},
+	Year = {2006}}
+
+@article{Fidler07CVPR,
+	Author = {S. Fidler and A. Leonardis},
+	Date-Added = {2008-02-23 20:54:56 -0500},
+	Date-Modified = {2008-02-23 20:55:42 -0500},
+	Journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+	Keywords = {model object},
+	Title = {Towards scalable representations of object categories: Learning a hierarchy of parts},
+	Year = {2007}}
+
+@article{Fischler81ACM,
+	Author = {Fischler, M.A. and Bolles, R.C.},
+	Date-Added = {2010-03-08 17:33:12 -0500},
+	Date-Modified = {2010-03-08 17:34:18 -0500},
+	Journal = {ACM New York, NY, USA},
+	Title = {Random sample consensus: A paradigm for model fitting with applications to image analysis and automated cartography},
+	Year = {1981}}
+
+
+@article{Folkesson04ICRA,
+	Author = {J. Folkesson and H. Christensen},
+	Date-Added = {2008-09-15 15:20:21 -0400},
+	Date-Modified = {2008-09-15 15:21:36 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {SLAM},
+	Title = {Graphical {SLAM} - A Self-Correcting Map},
+	Year = {2004}}
+
+@article{Folkesson05ICRA,
+	Author = {Folkesson, J. and Jensfelt, P. and Christensen, H.},
+	Date-Added = {2010-03-07 01:30:01 -0500},
+	Date-Modified = {2010-03-08 23:15:02 -0500},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {SLAM},
+	Title = {Vision {SLAM} in the measurement subspace},
+	Year = {2005}}
+
+@article{Folkesson05IROS,
+	Author = {Folkesson, J. and Jensfelt, P. and Christensen, H.I.},
+	Date-Added = {2010-03-07 01:31:39 -0500},
+	Date-Modified = {2010-03-08 23:14:45 -0500},
+	Journal = {International Conference on Intelligent Robots and Systems},
+	Keywords = {SLAM},
+	Title = {Graphical {SLAM} using vision and the measurement subspace},
+	Year = {2005}}
+
+@article{Folkesson07TOR,
+	Author = {Folkesson, J. and Jensfelt, P. and Christensen, H.I.},
+	Date-Added = {2010-03-07 01:35:34 -0500},
+	Date-Modified = {2010-03-08 23:15:37 -0500},
+	Journal = {IEEE Transactions on Robotics},
+	Title = {The {M}-Space feature representation for {SLAM}},
+	Year = {2007}}
+
+@book{ForsythPonce03Book,
+	Author = {D. A. Forsyth and J. Ponce},
+	Date-Added = {2008-02-24 09:47:07 -0500},
+	Date-Modified = {2008-02-24 09:48:51 -0500},
+	Keywords = {bookshelf},
+	Publisher = {Pearson Education Inc},
+	Title = {Computer Vision: A modern approach},
+	Year = {2003}}
+
+
+@article{Freeman91PAMI,
+	Abstract = {Steerable filters comparison from Mikolajczyk03
+
+
+},
+	Author = {W. Freeman and E. Adelson},
+	Date-Added = {2008-02-22 16:54:06 -0500},
+	Date-Modified = {2008-02-23 20:19:14 -0500},
+	Journal = {Pattern Analysis and Machine Intelligence},
+	Keywords = {descriptor},
+	Title = {The design and use of steerable filters},
+	Year = {1991}}
+
+@InProceedings{Galindo05IROS,
+	author = "C. Galindo and A. Saffiotti and S. Coradeschi and P. Buschka",
+	title = "Multi-Hierarchical Semantic Maps for Mobile Robotics",
+	booktitle = "in Proc. of the IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems, 2005",
+	year = "2005",
+	pages = "3492--3497"
+}
+
+@InProceedings{Gerkey03ICAR,
+	address = "Coimbra, Portugal",
+	author = "B. Gerkey and R. Vaughan and A. Howard",
+	booktitle = "11th International Conference on Advanced Robotics (ICAR 2003)",
+	title = "The Player/Stage Project: Tools for Multi-Robot and Distributed Sensor Systems",
+	year = 2003,
+	month = jun
+}
+
+@article{Grimson90MIT,
+	Author = {W. E. L. Grimson},
+	Date-Added = {2008-02-24 09:41:31 -0500},
+	Date-Modified = {2008-02-24 09:43:01 -0500},
+	Journal = {MIT Press},
+	Keywords = {model object},
+	Title = {Object recognition by computer: the role of geometric constraints},
+	Year = {1990}}
+
+
+@InProceedings{Grisetti07TRO,
+	author = "Giorgio Grisetti and Cyrill Stachniss and Wolfram Burgard",
+	title = "Improved techniques for grid mapping with rao-blackwellized particle filters",
+	journal = "IEEE Transactions on Robotics",
+	year = "2007",
+	volume = "23",
+	booktitle = "IEEE Transactions on Robotics"
+}
+
+@article{Guivant01ITRA,
+	Author = {J. E. Guivant and E. M. Nebot},
+	Date-Added = {2008-09-15 16:17:39 -0400},
+	Date-Modified = {2008-09-15 16:19:10 -0400},
+	Journal = {IEEE Transactions on Robotics and Automation},
+	Keywords = {SLAM},
+	Month = {June},
+	Number = {3},
+	Title = {Optimization of the simultaneous localization and map-building algorithm for real-time implementation},
+	Volume = {17},
+	Year = {2001}}
+
+
+@article{Hahnel02IROS,
+	Author = {D. H\"{a}hnel and D. Schulz and W. Burgard},
+	Date-Added = {2009-09-10 11:00:26 -0400},
+	Date-Modified = {2009-09-11 11:16:34 -0400},
+	Journal = {International Conference on Intelligent Robots and Systems},
+	Keywords = {Dynamic Environment SLAM},
+	Pages = {496-501},
+	Title = {Map Building with Mobile Robots in Populated Environments},
+	Year = {2002}}
+
+
+@article{Hahnel03ICRA,
+	Author = {D. H\"{a}hnel and R. Triebel and W. Burgard and S. Thrun},
+	Date-Added = {2009-09-10 11:03:03 -0400},
+	Date-Modified = {2009-09-11 11:16:10 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {Dynamic Environment SLAM},
+	Pages = {1557-1563},
+	Title = {Map Building with Mobile Robots in Dynamic Environments},
+	Year = {2003}}
+
+@article{Hahnel03ISRR,
+    author = {Dirk Hähnel and Sebastian Thrun and Ben Wegbreit and Wolfram Burgard},
+    title = {Towards Lazy Data Association in {SLAM}},
+    Journal = {International Symposium on Robotics Research},
+    year = {2003}
+}
+
+@article{Harris88AlveyVision,
+	Annote = {This is a paper describing the Harris Corner detector},
+	Author = {C. Harris and M. Stephens},
+	Date-Added = {2008-02-23 09:47:23 -0500},
+	Date-Modified = {2008-03-02 22:25:00 -0500},
+	Journal = {Alvey Vision Conference},
+	Keywords = {interest point},
+	Pages = {141-151},
+	Title = {A combined corner and edge detector},
+	Year = {1988}}
+
+
+@book{HartleyZisserman03Book,
+	Author = {R. Hartley and A. Zisserman},
+	Date-Added = {2008-02-24 09:50:53 -0500},
+	Date-Modified = {2008-03-02 22:26:04 -0500},
+	Edition = {second},
+	Keywords = {bookshelf},
+	Publisher = {Cambridge University Press},
+	Title = {Multiple view geometry in computer vision},
+	Year = {2003}}
+
+@url{HessSIFT,
+	Author = {R. Hess},
+	Date-Added = {2008-04-04 15:18:48 -0400},
+	Date-Modified = {2008-04-04 15:21:22 -0400},
+	Keywords = {descriptor},
+	Title = {SIFT implementation},
+	Urldate = {http://web.engr.oregonstate.edu/~hess}}
+
+@INPROCEEDINGS{Hirzinger02ICRA,
+title={{DLR}'s torque-controlled light weight robot {III}-are we reaching the technological limits now?},
+author={Hirzinger, G. and Sporer, N. and Albu-Schaffer, A. and Hahnle, M. and Krenn, R. and Pascucci, A. and Schedl, M.},
+booktitle={Robotics and Automation, 2002. Proceedings. ICRA '02. IEEE International Conference on},
+year={2002},
+month={},
+volume={2},
+number={},
+pages={ 1710-1716 vol.2},
+keywords={ concurrent engineering, digital simulation, robot dynamics, robot kinematics DLR torque-controlled light weight robot III, minimal power consumption, minimal power losses, robot-dedicated high energy motor, technological limits, ultralight carbon fibres},
+doi={10.1109/ROBOT.2002.1014788},
+ISSN={ }, }
+
+@article{Hou07CVPR,
+	Author = {Hou, X. and Zhang, L.},
+	Date-Added = {2010-03-08 21:58:25 -0500},
+	Date-Modified = {2010-03-08 21:59:03 -0500},
+	Journal = {CVPR},
+	Title = {Saliency detection: A spectral residual approach},
+	Year = {2007}}
+
+@InProceedings{Iocchi07ISPRS,
+	author = "L. Iocchi and S. Pellegrini",
+	title = "Building 3D maps with semantic elements integrating 2D laser, stereo vision and ins on a mobile robot",
+	booktitle = "in Proc. of the 2nd ISPRS Int. Workshop 3D-ARCH",
+	year = "2007"
+}
+
+@article{Jain00PAMI,
+	Annote = {Model based object recognition survey presentation citation},
+	Author = {K. Jain and P. W. Duin and J. Mao},
+	Date-Added = {2008-02-23 20:09:56 -0500},
+	Date-Modified = {2008-02-23 20:18:49 -0500},
+	Journal = {Pattern Analysis and Machine Intelligence},
+	Keywords = {model object},
+	Month = {January},
+	Number = {1},
+	Pages = {4-37},
+	Title = {Statistical pattern recognition: A review},
+	Volume = {22},
+	Year = {2000}}
+
+@conference{Jain08RSS,
+  title={{Behaviors for Robust Door Opening and Doorway Traversal with a Force-Sensing Mobile Manipulator}},
+  author={A. Jain and C. C. Kemp},
+  booktitle={RSS Manipulation Workshop: Intelligence in Human Environments},
+  year={2008}
+}
+
+@conference{Jain09Humanoids,
+    title={{Pulling Open Novel Doors and Drawers with Equilibrium Point Control}},
+    author={A. Jain and C. C. Kemp},
+    booktitle = {Proceedings of the IEEE-RAS International Conference on Humanoid Robotics (Humanoids)},
+    year={2009}
+}
+
+@conference{Jain09RSS,
+    title={{Behavior-Based Door Opening with Equilibrium Point Control}},
+    author={A. Jain and C. C. Kemp},
+    booktitle={RSS Workshop: Mobile Manipulation in Human Environments},
+    year={2009}
+}
+
+
+@conference{Kaess07ICRA,
+	Author = {M. Kaess and A. Ranganathan and F. Dellaert},
+	Booktitle = {International Conference on Robotics and Automation},
+	Date-Added = {2008-09-13 14:48:31 -0400},
+	Date-Modified = {2008-09-14 23:02:33 -0400},
+	Keywords = {SAM},
+	Title = {{iSAM}: Fast Incremental Smoothing and Mapping with Efficient Data Association},
+	Year = {2007}}
+
+
+@conference{Kaess07IJCAI,
+	Author = {M. Kaess and A. Ranganathan and F. Dellaert},
+	Booktitle = {International Joint Conference on Artificial Intelligence},
+	Date-Added = {2008-09-13 14:46:16 -0400},
+	Date-Modified = {2008-09-13 14:47:39 -0400},
+	Keywords = {SAM},
+	Title = {Fast Incremental Square Root Information Smoothing},
+	Year = {2007}}
+
+@article{Kaess08ITOR,
+	Author = {M. Kaess and A. Ranganathan and F. Dellaert},
+	Date-Added = {2008-09-13 14:50:06 -0400},
+	Date-Modified = {2008-09-14 23:02:41 -0400},
+	Journal = {IEEE Transactions on Robotics},
+	Keywords = {SAM},
+	Title = {{iSAM}: Incremental Smoothing and Mapping},
+	Volume = {(Forthcoming)},
+	Year = {2008}}
+
+
+@conference{Kai07ICCV,
+	Author = {K. Ni and D. Steedly and F. Dellaert},
+	Booktitle = {Internation Conference on Computer Vision},
+	Date-Added = {2008-09-13 14:44:47 -0400},
+	Date-Modified = {2008-09-13 14:48:11 -0400},
+	Keywords = {SAM},
+	Title = {Out-of-Core Bundle adjustment for Large-Scale 3D Reconstruction},
+	Year = {2007}}
+
+
+@conference{Kai07ICRA,
+	Author = {K. Ni and D. Steedly and F. Dellaert},
+	Booktitle = {International Conference on Robotics and Automation},
+	Date-Added = {2008-09-13 14:43:18 -0400},
+	Date-Modified = {2008-09-14 23:03:18 -0400},
+	Keywords = {SAM},
+	Title = {Tectonic {SAM}: Exact; Out-of-Core; Submap-based {SLAM}},
+	Year = {2007}}
+
+@conference{Katz06RSS,
+	Author = {Katz, D. and Horrell, E. and Yang, Y. and Burns, B. and Buckley, T. and Grishkan, A. and Zhylkovskyy, V. and Brock, O. and Learned-Miller, E.},
+	Booktitle = {Workshop on Manipulation in Human Environments at Robotics: Science and Systems},
+	Title = {{The UMass mobile manipulator uMan: An experimental platform for autonomous mobile manipulation}},
+	Year = {2006}}
+
+@article{Ke04CVPR,
+	Annote = {PCA-SIFT},
+	Author = {Y. Ke and R. Sukthankar},
+	Date-Added = {2008-02-23 12:23:37 -0500},
+	Date-Modified = {2008-02-24 10:15:53 -0500},
+	Journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+	Keywords = {descriptor},
+	Title = {{PCA-SIFT}: A more distinctive representation for local image descriptors},
+	Year = {2004}}
+
+@article{Klingbeil08RSS,
+	title = {Learning to open new doors},
+	journal = {{RSS} workshop on robot manipulation},
+	author = {Klingbeil, E. and Saxena, A. and Ng, A.},
+	year = {2008}
+}
+
+@article{Koenderink87BiologicalCybernetics,
+	Author = {J. Koenderink and A. van Doorn},
+	Date-Added = {2008-02-23 09:43:20 -0500},
+	Date-Modified = {2008-02-23 20:18:38 -0500},
+	Journal = {Biological Cybernetics},
+	Keywords = {descriptor},
+	Title = {Representation of local geometry in the visual system},
+	Year = {1987}}
+
+
+@article{Krempp02TechReport,
+	Author = {S. Krempp and D. Geman and Y. Amit},
+	Date-Added = {2008-02-23 20:28:05 -0500},
+	Date-Modified = {2008-03-02 22:27:01 -0500},
+	Journal = {Tech Report at Johns Hopkins University},
+	Keywords = {model object},
+	Title = {Sequential learning of reusable parts for object detection},
+	Year = {2002}}
+
+
+@article{Kuipers00AI,
+	Author = {B. Kuipers},
+	Date-Added = {2008-09-15 15:27:25 -0400},
+	Date-Modified = {2008-09-15 15:28:16 -0400},
+	Journal = {Artificial Intelligence},
+	Keywords = {SLAM},
+	Month = {May},
+	Number = {1-2},
+	Pages = {191-233},
+	Title = {The spatial semantic hierarchy},
+	Volume = {119},
+	Year = {2000}}
+
+
+@article{Leibe03BMVC,
+	Annote = {This is the one with the templates and the generalized Hough transform
+},
+	Author = {B. Leibe and B. Schiele},
+	Date-Added = {2008-02-23 21:10:24 -0500},
+	Date-Modified = {2008-06-20 13:34:21 -0400},
+	Journal = {British Machine Vision Conference},
+	Keywords = {model object},
+	Month = {September},
+	Title = {Interleaved object categorization and segmentation},
+	Year = {2003}}
+@INPROCEEDINGS{Leonard01ISRR,
+    author = {John J. Leonard and Paul M. Newman and Richard J. Rikoski and Jos\'{e} Neira and Juan. D. Tard\'{o}s},
+    title = {Towards Robust Data Association and Feature Modeling for Concurrent Mapping and Localization},
+    booktitle = {in 10th Int. Symposium on Robotics Research},
+    year = {2001},
+    pages = {9--12}
+}
+
+
+@article{Loncaeic98PAMI,
+	Author = {S. Loncaeic},
+	Date-Added = {2008-02-23 20:12:46 -0500},
+	Date-Modified = {2008-02-23 20:16:46 -0500},
+	Journal = {Pattern Recognition},
+	Keywords = {model object},
+	Number = {8},
+	Pages = {983-1001},
+	Title = {A survey of shape analysis techniques},
+	Volume = {31},
+	Year = {1998}}
+
+@article{Lowe04IJCV,
+	Abstract = {The purpose of the SIFT (scale invariant feature transform) is to extract distinctive invariant features which allow for matching between different views of an object.  The features are invariant to scale and rotation, while remaining robust to illumination, noise, change in viewpoint, and illumination.  The features are distinctive enough to be matched uniquely among a large database of features with high probability of detection.
+
+Recognition is handled by a nearest-neighbor algorithm with a generalized Hough transform to make sure the features agree on a single object location plus another verification step.
+
+The first stage searches over scales and locations to find "scale-space extrema".  This is approximated by the Difference of Gaussians function to identify these interest points.
+
+These keypoints are then selected from the extrema of the scale-space which are stable among scales and location within the scale-space.  An orientation is assigned to the keypoints based on image gradient directions.  The orientation invariance is achieved by computing all quantities relative to this keypoint orientation; therefore all quantities are in a local frame-of-reference.
+
+The descriptor is computed at the keypoint location by rotating the local gradient image into the zero orientation.  The feature vector is a 4x4 set of 8 histogram bins for orientations, which gives 128 entries.  This vector is then normalized to unit length to assist with illumination invariance.
+
+The authors speak of having a 50% recognition rate in their tests when the sample object undergoes a 50 degree rotation out-of-the-plane.},
+	Annote = {Feature Detectors/ lowe04distinctive.pdf
+},
+	Author = {D. Lowe},
+	Date-Added = {2008-02-22 14:58:05 -0500},
+	Date-Modified = {2010-03-11 01:27:55 -0500},
+	Journal = {International Journal of Computer Vision},
+	Keywords = {descriptor},
+	Title = {Distinctive Image Features from Scale-Invariant Keypoints},
+	Year = {2004}}
+
+@article{Lowe99ICCV,
+	Abstract = {See the abstract annotations for lowe04IJCV
+},
+	Annote = {Feature Detectors/lowe99object.pdf
+},
+	Author = {D. Lowe},
+	Date-Added = {2008-02-22 16:21:30 -0500},
+	Date-Modified = {2008-02-23 20:18:18 -0500},
+	Journal = {International Conference on Computer Vision},
+	Keywords = {descriptor},
+	Title = {Object Recognition from Local Scale-Invariant Features},
+	Year = {1999}}
+
+@InProceedings{Marder-Eppstein10ICRA,
+	title = "The Office Marathon: Robust Navigation in an Indoor Office Environment",
+	booktitle = "International Conference on Robotics and Automation (ICRA)",
+	year = "2010",
+	month = "05",
+	author = "Eitan Marder-Eppstein and Eric Berger and Tully Foote and Brian Gerkey and Kurt Konolige"
+}
+
+@Article{Martinez-Mozos07RAS,
+	title = "Supervised semantic labeling of places using information extracted from sensor data",
+	author = "Oscar Martinez Mozos and Rudolph Triebel and Patric Jensfelt and Axel Rottmann and Wolfram Burgard",
+	journal = "Robotics and Autonomous Systems (RAS)",
+	pages = "391--402",
+	volume = "55",
+	number = "5",
+	month = "May",
+	year = "2007",
+	issn = "0921-8890",
+	category = "journal",
+	jcr = "(0.633 2007)",
+	position = "7/13 ROBOTICS (2007)"
+}
+
+@Book{Martinez-Mozos10STAR,
+	title = "Semantic Place Labeling with Mobile Robots",
+	series = "Springer Tracts in Advanced Robotics (STAR)",
+	author = "Oscar Martinez Mozos",
+	publisher = "Springer",
+	address = "Germany",
+	year = "2010",
+	isbn = "978-3-642-11209-6",
+	category = "book"
+}
+
+@article{Marzorati07ECMR,
+	Annote = {This paper describes a visual SLAM system which uses "hierarchical map decomposition" and 6DoF pose by fusing measurements from line detectors and point features.  This fusion is accomplished through the use of the Uncertain Projective Geometry framework: by representing a line as an operator on two points, and a plane as a 3D point plus a 3d line they are able to determine the Jacobians of these operators directly since they are bilinear.  The simplest example which I will note here which is seen on the second page, two 2D points giving a 2D line.  The relation is the wedge operator between these points, which can be written in matrix form as S(x)y where S(x) is the cross product matrix of X.  Taking the matrix-vector product of S(x) and y gives a line vector [y1-y2, x2-x1, x1y2-x2y1] which if you take the homogenous representation of a point you can test to see how far it is from this line through the inner product operator.
+
+Lines are represented using the 6 parameter Plucker form (umlaut on the u) which is the homogenous equivalent of a 3D line, expressed in 5D projective geometry(!).  It uniquely determines the line through two points x, and y as d=y-x and m = x(cross)y with Plucker coordinates of (d1,d2,d3, m1,m2,m3).  Check http://en.wikipedia.org/wiki/Line_geometry
+
+The use of these operators gives their Jacobians directly for use on the covariance propogation in the EKF.  This is because they are using both point estimates of the endpoints of the lines as well as line estimates, and both must be used to update the covariances of the line parameters.},
+	Author = {D. Marzorati and M. Matteucci and D. Migliore and D. G. Sorrenti},
+	Date-Added = {2008-06-20 12:37:38 -0400},
+	Date-Modified = {2008-09-14 23:04:26 -0400},
+	Journal = {European Conference on Mobile Robots},
+	Keywords = {Visual SLAM},
+	Title = {Integration of {3D} lines and points in {6DoF} Visual {SLAM} by Uncertain Projective Geometry},
+	Year = {2007}
+}
+
+@article{Mikolajcyk01ICCV,
+	Annote = {This describes the Harris-Laplace interest point detector.  This detector enhances the invariance of the Harris detector with scale invariance by selecting the best scale with the Laplacian operator.  },
+	Author = {K. Mikolajczyk and C. Schmid},
+	Date-Added = {2008-02-23 09:48:36 -0500},
+	Date-Modified = {2008-02-23 20:17:53 -0500},
+	Journal = {International Conference on Computer Vision},
+	Keywords = {interest point},
+	Pages = {525-531},
+	Title = {Indexing based on scale invariant interest points},
+	Year = {2001}}
+
+@article{Mikolajcyk02ECCV,
+	Annote = {This is the Harris-Laplace detector with affine invariant neighborhoods identified by the eigenvalues of the second moment matrix
+},
+	Author = {K. Mikolajczyk and C. Schmid},
+	Date-Added = {2008-02-23 09:52:32 -0500},
+	Date-Modified = {2008-02-23 20:17:24 -0500},
+	Journal = {European Conference on Computer Vision},
+	Keywords = {interest point},
+	Pages = {128-142},
+	Title = {An affine invariant interest point detector},
+	Year = {2002}}
+
+@article{Mikolajczyk03CVPR,
+	Abstract = {This paper compares the SIFT descriptor, steerable filter, differential invariants, complex filters, moment invariants and cross correlation with different types of interest points.  The paper determines that SIFT performs better than any of these types of descriptors under changes in viewing conditions and errors of the point detector.  This sudy predates the SURF feature descriptor.
+
+},
+	Annote = {Feature Detectors/Mikolajczyk03CVPR.pdf
+},
+	Author = {K. Mikolajczyk and C. Schmid},
+	Date-Added = {2008-02-22 16:26:39 -0500},
+	Date-Modified = {2008-02-23 20:16:28 -0500},
+	Journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+	Keywords = {descriptor},
+	Title = {A performance evaluation of local descriptors},
+	Year = {2003}}
+
+
+@InProceedings{Montemerlo03IJCAI,
+	author = "Michael Montemerlo and Sebastian Thrun and Daphne Koller and Ben Wegbreit",
+	title = "{FastSLAM} 2.0: An Improved Particle Filtering Algorithm for Simultaneous Localization and Mapping that Provably Converges",
+	booktitle = "In Proc. of the Int. Conf. on Artificial Intelligence (IJCAI",
+	year = "2003",
+	pages = "1151--1156"
+}
+
+@article{Montiel06RSS,
+	Author = {J. M. M. Montiel and J. Civera and A. J. Davison},
+	Date-Added = {2008-09-13 15:29:38 -0400},
+	Date-Modified = {2008-09-14 23:05:17 -0400},
+	Journal = {Robotics: Science and Systems},
+	Keywords = {Visual SLAM},
+	Title = {Unified Inverse Depth Parameterization for Monocular {SLAM}},
+	Year = {2006}}
+
+
+@article{Neira01ITRA,
+	Author = {J. Neira and J. D. Tard\'{o}s},
+	Date-Added = {2008-09-15 08:58:51 -0400},
+	Date-Modified = {2009-07-29 11:59:01 -0400},
+	Journal = {IEEE Transactions on Robotics and Automation},
+	Keywords = {SLAM},
+	Month = {Dec},
+	Number = {6},
+	Pages = {890-897},
+	Title = {Data Association in Stochastic Mapping using the Joint Compatibility Test},
+	Volume = {17},
+	Year = {2001}}
+
+@article{Nguyen05IROS,
+	Author = {Nguyen, V. and Martinelli, A. and Tomatis, N. and Siegwart, R.},
+	Date-Added = {2010-03-09 13:17:42 -0500},
+	Date-Modified = {2010-03-09 13:18:41 -0500},
+	Journal = {International Conference on Intelligent Robots and Systems},
+	Title = {A comparison of line extraction algorithms using 2D laser rangefinder for indoor mobile robotics},
+	Year = {2005}}
+
+@InProceedings{Oberlander08ICRA,
+	author = {Jan Oberl{\"a}nder and Klaus Uhl and Johann Marius Z{\"o}llner and R{\"u}diger Dillmann},
+	title = "A region-based {SLAM} algorithm capturing metric, topological, and semantic properties",
+	booktitle = "In Proc. of the IEEE Intl. Conf. on Robotics and Automation (ICRA)",
+	year = "2008",
+	pages = "1886--1891"
+}
+
+@InProceedings{OCallaghan09ICRA,
+	author = "Simon O'Callaghan and Fabio T. Ramos and Hugh F. Durrant-Whyte",
+	booktitle = "In Proc. of the IEEE Intl. Conf. on Robotics and Automation (ICRA)",
+	pages = "1054--1060",
+	publisher = "IEEE",
+	title = "Contextual occupancy maps using Gaussian processes.",
+	year = "2009"
+}
+
+@inproceedings{Olson05RSS,
+	Abstract = {We present SCGP, an algorithm for finding a single cluster of well-connected nodes in a graph. The general problem is NP-hard, but our algorithm produces an approximate solution in O(N2) time by considering the spectral properties of the graph's adjacency matrix. We show how this algorithm can be used to find sets of self-consistent hypotheses while rejecting incorrect hypotheses, a problem that frequently arises in robotics. We present results from a range-only SLAM system, a polynomial time data association algorithm, and a method for parametric line fitting that can outperform RANSAC.},
+	Annote = {Looks like a powerful technique which can be used in place of normalized graph cuts to identify the best single cluster.  It can replace RANSAC in potentially all applications with the same runtime complexity and will generate more repeatable results, according to this paper.  This paper demonstrates the technique for line fitting, data association, and range-only SLAM.
+},
+	Author = {E. Olson and M. Walter and S. Teller and J. Leonard},
+	Booktitle = {Robotics: Science and Systems},
+	Date-Added = {2009-02-17 10:55:10 -0500},
+	Date-Modified = {2009-02-17 11:19:14 -0500},
+	Keywords = {clustering},
+	Month = {June},
+	Title = {Single-Cluster Spectral Graph Partitioning for Robotics Applications},
+	Year = {2005}}
+
+@article{Opelt06ECCV,
+	Annote = {The boundary model with the cows and the hough transform.  },
+	Author = {A. Opelt and A. Pinz and A. Zisserman},
+	Date-Added = {2008-02-23 20:21:26 -0500},
+	Date-Modified = {2008-02-23 20:22:35 -0500},
+	Journal = {European Conference on Computer Vision},
+	Keywords = {model object},
+	Pages = {575-588},
+	Title = {A boundary-fragment-model for object detection},
+	Year = {2006}}
+
+
+@InProceedings{Papakonstantinou96ICRA,
+	author = "Sgouros Papakonstantinou and N. M. Sgouros and G. Papakonstantinou and P. Tsanakas",
+	title = "Localized Qualitative Navigation for Indoor Environments",
+	booktitle = "In Proc. of the IEEE Intl. Conf. on Robotics and Automation",
+	year = "1996"
+}
+
+@article{Pinto08PLOS,
+	Annote = {Presents an oriented Gabor filter based object recognition scheme which outperforms the state of the art on the Caltech 101 data sets.  Primarily a stomping board for complaining about how easy Caltech 101 is.
+},
+	Author = {N. Pinto and D. D. Cox and J. J. DiCarlo},
+	Date-Added = {2008-02-23 21:13:15 -0500},
+	Date-Modified = {2008-02-23 21:16:21 -0500},
+	Journal = {PLoS Computational Biology},
+	Keywords = {neuroscience},
+	Month = {January},
+	Title = {Why is real-world visual object recognition hard?},
+	Year = {1998}}
+
+@inproceedings{Prats08RSS,
+	author = {M. Prats and P. J. Sanz and A. P. del Pobil},
+	title = {A Sensor-based Approach for Physical Interaction Based on Hand, Grasp and Task Frames},
+	booktitle = {Proceedings of the Manipulation Workshop in Robotics Science And Systems},
+	year = {2008}
+}
+
+@conference{Quigley07AAAI,
+	Author = {Quigley, M. and Berger, E. and Ng, A.Y.},
+	Booktitle = {AAAI Robotics Workshop},
+	Title = {{Stair: Hardware and software architecture}},
+	Year = {2007}}
+
+@inproceedings{Quigley09ICRA,
+	Author = {M. Quigley and K. Conley and B. Gerkey and J. Faust and T.~B. Foote and J. Leibs and R. Wheeler and A.~Y. Ng},
+	Booktitle = {International Conference on Robotics and Automation},
+	Date-Added = {2010-03-11 01:29:26 -0500},
+	Date-Modified = {2010-03-11 01:29:26 -0500},
+	Series = {Open-Source Software workshop},
+	Title = {{ROS}: an open-source Robot Operating System},
+	Year = {2009}}
+
+@article{Quigley09TR,
+	Author = {Quigley, M. and Batra, S. and Gould, S. and Klingbeil, E. and Le, Q. and Wellman, A. and Ng, A.Y.},
+	Title = {{High-Accuracy 3D Sensing for Mobile Manipulation: Improving Object Detection and Door Opening}},
+	Year={2009}}
+
+@InProceedings{Rogers10IROS,
+        author = {J.~G. Rogers and A.~J.~B. Trevor and C. Nieto-Granda and H.~I. Christensen},
+        title = {{SLAM} with Expectation Maximization for Moveable Object Tracking},
+	booktitle = "IROS'10: Proceedings of the 2010 IEEE/RSJ international conference on Intelligent robots and systems",
+        year = {2010}}
+
+@InProceedings{Rottmann05AAAI,
+	author = "Axel Rottmann and {\'O}scar Mart{\'i}nez Mozos and Cyrill Stachniss and Wolfram Burgard",
+	title = "Semantic place classification of indoor environments with mobile robots using boosting",
+	booktitle = "AAAI'05: Proceedings of the 20th national conference on Artificial intelligence",
+	year = "2005",
+	isbn = "1-57735-236-x",
+	pages = "1306--1311",
+	location = "Pittsburgh, Pennsylvania",
+	publisher = "AAAI Press"
+}
+
+@InProceedings{Rusu09IROS,
+	author = "Radu Bogdan Rusu and Zoltan Csaba Marton and Nico Blodow and Andreas Holzbach and Michael Beetz",
+	title = "Model-based and learned semantic object labeling in 3D point cloud maps of kitchen environments",
+	booktitle = "IROS'09: Proceedings of the 2009 IEEE/RSJ international conference on Intelligent robots and systems",
+	year = "2009",
+	isbn = "978-1-4244-3803-7",
+	pages = "3601--3608",
+	location = "St. Louis, MO, USA",
+	publisher = "IEEE Press",
+	address = "Piscataway, NJ, USA"
+}
+
+@article{Schaffalitzky02ECCV,
+	Author = {F. Schaffalitzky and A. Zisserman},
+	Date-Added = {2008-02-23 09:44:41 -0500},
+	Date-Modified = {2008-02-23 20:18:08 -0500},
+	Journal = {European Conference on Computer Vision},
+	Keywords = {descriptor},
+	Title = {Multi-view matching for unordered image sets},
+	Year = {2002}}
+
+@article{Shi00PAMI,
+	Author = {J. Shi and J. Malik},
+	Date-Added = {2008-09-13 17:54:24 -0400},
+	Date-Modified = {2008-09-13 17:55:12 -0400},
+	Journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	Keywords = {Visual SLAM},
+	Title = {Normalized Cuts and Image Segmentation},
+	Year = {2000}}
+
+@article{Smith06BMVC,
+	Annote = {This paper describes using line features in a 6DOF Visual SLAM.  The paper argues that using Canny with Hough would be too slow for extracting lines in the image -- however they may not know about the OpenCV implementations judging from their use of archaic Oxford computer vision libraries.  First they describe their line detector which uses the "FAST" feature detector to locate candidate line endpoints.  This generates about 166 corners on a 320x240 image.  Now each pair of endpoints is tested to see if it is a line.  this is 13695 possible lines, but they are pruned with some simple tests
+1) Must be longer than 30 pixels
+2) Midpoint is tested with Sobel operator for "edgel"ness with a generous threshold
+3) 1/4 and 3/4 point is tested for "edgel"ness
+4) Full Bressenham walk is tested for "edgel"ness, must have >= 95% edgels
+Whole process takes 4.4ms
+
+Measurements are made along the normal direction to the line due to the aperture problem.  Lines are represented using the end points as point features, which allows a simple form for all of the Jacobians.  only slight changes from the single point feature case, designed to restrict the innovation to the normal direction.  Partially initialized features are kept as semi-infinite planes which are represented with the particle filter until they collapse into a line estimate.  though this is probably really two particle filters on the endpoints of the line.  Measurement is taken as a point sample along the projected line, this sample traverses along the 1D projected normal direction to find the nearest good edgel, with some robustness to generate a consistant estimate from all point samples.  This error is propogated in the measurement update step while maintaining that it is only along the normal direction.
+
+Main result: twice the performance of point features in terms of longevity of consistency, though this is still a pitiful longevity of only 26 seconds.  Davison uses no odometry so this will presumably be a severe limiting factor.},
+	Author = {P. Smith and I. Reid and A. Davison},
+	Date-Added = {2008-06-20 13:31:41 -0400},
+	Date-Modified = {2008-09-14 23:04:56 -0400},
+	Journal = {British Machine Vision Conference},
+	Keywords = {Visual SLAM},
+	Title = {Real-time monocular {SLAM} with Straight Lines},
+	Year = {2006}
+}
+
+@article{Smith07ICDAR,
+	Author = {Smith, R.},
+	Date-Added = {2010-03-12 19:43:57 -0500},
+	Date-Modified = {2010-03-12 19:46:03 -0500},
+	Journal = {Proceedings of the {ICDAR}},
+	Title = {An overview of the Tesseract {OCR} engine},
+	Year = {2007}}
+
+
+@article{Smith87IJRR,
+	Author = {R. Smith and P. Cheeseman},
+	Date-Added = {2008-09-15 14:58:17 -0400},
+	Date-Modified = {2008-09-15 14:59:56 -0400},
+	Journal = {International Journal of Robotics Research},
+	Keywords = {SLAM},
+	Month = {Winter},
+	Number = {4},
+	Pages = {56-68},
+	Title = {On the representation and estimation of spatial uncertainty},
+	Volume = {5},
+	Year = {1987}}
+
+@InProceedings{Spexard06IROS,
+	author = {Thorsten Spexard and Shuyin Li and Britta Wrede and Jannik Fritsch and Gerhard Sagerer and Olaf Booij and Zoran Zivkovic and Bas Terwijn and Ben Kr{\"o}se},
+	booktitle = "Proc. IEEE/RSJ Int. Conf. on Intelligent Robots and Systems",
+	publisher = "IEEE",
+	title = "BIRON, where are you? - Enabling a robot to learn new places in a real home environment by integrating spoken dialog and visual localization",
+	year = "2006",
+	month = "October"
+}
+
+@article{Srinivasa09AR,
+  title={HERB: A Home Exploring Robotic Butler},
+  author={Srinivasa, S. and Ferguson, D. and Helfrich, C. and Berenson, D. and Collet, A. and Diankov, R.
+  and Gallagher, G. and Hollinger, G. and Kuffner, J. and VandeWeghe, M.},
+  booktitle={Autonomous Robots},
+  year={2009},
+  note={doi:10.1007/s10514-009-9160-9}
+}
+
+@misc{SRlib,
+	author = {SNU Robotics Lab},
+	howpublished="\url{http://r-station.co.kr/srlib/index.html}"
+}
+
+@article{Stachniss05AAAI,
+	Author = {C. Stachniss and W. Burgard},
+	Date-Added = {2009-09-12 17:30:31 -0400},
+	Date-Modified = {2009-09-12 17:32:57 -0400},
+	Journal = {Proceedings of the National Conference on Artificial Intelligence},
+	Keywords = {Dynamic Environment SLAM},
+	Number = {3},
+	Title = {Mobile Robot Mapping and Localization in Non-Static Environments},
+	Volume = {20},
+	Year = {2005}}
+
+@article{Stein92PAMI,
+	Author = {F. Stein and G. Medioni},
+	Date-Added = {2008-02-23 20:13:38 -0500},
+	Date-Modified = {2008-02-23 20:19:04 -0500},
+	Journal = {Pattern Analysis and Machine Intelligence},
+	Keywords = {model object},
+	Number = {12},
+	Pages = {1198-1204},
+	Title = {Structural indexing-efficient 2D object recognition},
+	Volume = {14},
+	Year = {1992}}
+
+@article{Sudderth05ICCV,
+	Author = {E. B. Sudderth and A. Torralba and W. T. Freeman and A. S. Willsky},
+	Date-Added = {2008-02-23 20:30:28 -0500},
+	Date-Modified = {2008-03-02 22:28:03 -0500},
+	Journal = {International Conference on Computer Vision},
+	Keywords = {model object},
+	Title = {Learning hierarchical models of scenes, objects, and parts},
+	Year = {2005}}
+
+@article{Tardos02IJRR,
+	Author = {J. D. Tard\'{o}s and J. Neira and P. Newman and J. Leonard},
+	Date-Added = {2008-09-15 09:10:32 -0400},
+	Date-Modified = {2009-07-29 12:00:10 -0400},
+	Journal = {International Journal of Robotics Research},
+	Keywords = {SLAM},
+	Title = {Robust mapping and localization in indoor environments using sonar data},
+	Year = {2002}}
+
+@InProceedings{Thrun98AI,
+	AUTHOR = "S. Thrun",
+	TITLE = "Learning Metric-Topological Maps for Indoor Mobile Robot Navigation",
+	YEAR = "1998",
+	JOURNAL = "Artificial Intelligence",
+	VOLUME = "99",
+	PAGES = "21--71",
+	booktitle = "Artificial Intelligence"
+}
+
+@conference{Tomono00ICRA,
+	Author = {M. Tomono and S. Yuta},
+	Booktitle = {International Conference on Robotics and Automation},
+	Date-Added = {2010-03-10 18:55:54 -0500},
+	Date-Modified = {2010-03-10 18:59:05 -0500},
+	Title = {Mobile Robot Navigation in Indoor Environments using Object and Character Recognition},
+	Year = {2000}}
+
+@InProceedings{Topp06IROS,
+	author = "Elin A. Topp and Henrik I. Christensen",
+	booktitle = "Intelligent Robots and Systems, 2006 IEEE/RSJ International Conference on",
+	title = "Topological Modelling for Human Augmented Mapping",
+	year = "2006",
+	month = "Oct. ",
+	pages = "2257--2263"
+}
+
+
+@Article{Topp10TRO,
+	author = "E. A. Topp and H. I. Christensen",
+	journal = "Robotics, IEEE Transactions on",
+	title = "Detecting Region Transitions for Human-Augmented Mapping",
+	year = "2010",
+	pages = "1--5",
+	ISSN = "1552-3098"
+}
+
+@article{Trevor10ICRA,
+	Author = {Trevor, A. J. B. and Rogers III, J. G. and Nieto-Granda, C. and Christensen, H.I.},
+	Date-Added = {2010-03-12 19:51:17 -0500},
+	Date-Modified = {2010-03-12 19:52:23 -0500},
+	Journal = {International Conference on Robotics and Automation},
+	Title = {Applying domain knowledge to {SLAM} using virtual measurements},
+	Year = {2010}}
+
+@article{Triggs99LNCS,
+	Author = {B. Triggs, P.F. McLauchlan, R. I. Hartley and A. W. Fitzgibbon},
+	Date-Added = {2009-09-15 23:27:03 -0400},
+	Date-Modified = {2009-09-15 23:32:09 -0400},
+	Journal = {Lecture Notes in Computer Science},
+	Keywords = {SFM},
+	Pages = {298-372},
+	Title = {Bundle Adjustment - a modern synthesis},
+	Year = {1999}}
+
+
+@book{TruccoVerri98Book,
+	Author = {E. Trucco and A. Verri},
+	Date-Added = {2008-02-24 09:45:19 -0500},
+	Date-Modified = {2008-02-24 09:47:01 -0500},
+	Editor = {M. Horton},
+	Keywords = {bookshelf},
+	Publisher = {Prentice Hall},
+	Title = {Introductory techniques for 3-D computer vision},
+	Year = {1998}}
+
+@InProceedings{Tsetsos05ICPS,
+	author = "V. Tsetsos and C. Anagnostopoulos and P. Kikiras and P. Hasiotis and S. Hadjiefthymiades",
+	booktitle = "Pervasive Services, 2005. ICPS '05. Proceedings. International Conference on",
+	journal = "Pervasive Services, 2005. ICPS '05. Proceedings. International Conference on",
+	title = "A human-centered semantic navigation system for indoor environments",
+	year = "2005"
+}
+
+
+@article{Turk91CVPR,
+	Author = {M. Turk and A. Pentland},
+	Date-Added = {2008-02-24 09:33:05 -0500},
+	Date-Modified = {2008-02-24 09:34:12 -0500},
+	Journal = {IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+	Keywords = {appearance object},
+	Pages = {586-591},
+	Title = {Face recognition using eigenfaces},
+	Year = {1991}}
+
+
+@article{VanGool96ECCV,
+	Author = {L. Van Gool and T. Moons and D. Ungureanu},
+	Date-Added = {2008-02-23 09:45:51 -0500},
+	Date-Modified = {2008-02-23 20:17:15 -0500},
+	Journal = {European Conference on Computer Vision},
+	Keywords = {descriptor},
+	Title = {Affine/ photometric invariants for planar intensity patterns},
+	Year = {1996}}
+
+@article{Viola04IJCV,
+	Author = {P. Viola and M. J. Jones},
+	Date-Added = {2008-02-24 09:35:04 -0500},
+	Date-Modified = {2008-02-24 09:35:54 -0500},
+	Journal = {International Journal of Computer Vision},
+	Keywords = {appearance object},
+	Title = {Robust real-time face detection},
+	Year = {2004}}
+
+@article{Wagner07CVWW,
+	Author = {D. Wagner and D. Schmalstieg},
+	Date-Added = {2009-09-12 19:20:29 -0400},
+	Date-Modified = {2010-07-12 11:36:55 -0400},
+	Journal = {Proceedings of the 12th Computer Vision Winter Workshop},
+	Keywords = {Dynamic Environment SLAM},
+	Title = {{ARToolKitPlus} for Pose Tracking on Mobile Devices},
+	Year = {2007}}
+
+@article{Wang02ICRA,
+	Author = {C. Wang and C. Thorpe},
+	Date-Added = {2009-09-10 11:04:44 -0400},
+	Date-Modified = {2009-09-11 11:16:43 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {Dynamic Environment SLAM},
+	Title = {Simultaneous Localization and Mapping with Detection and Tracking of Moving Objects},
+	Year = {2002}}
+
+
+@article{Wang03ICRA,
+	Author = {C. Wang and C. Thorpe and S. Thrun},
+	Date-Added = {2009-09-10 11:06:12 -0400},
+	Date-Modified = {2009-09-11 11:16:21 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {Dynamic Environment SLAM},
+	Title = {Online Simultaneous Localization and Mapping with Detection and Tracking of Moving Objects: Theory and Results from a Ground Vehicle in Crowded Urban Areas},
+	Year = {2003}}
+
+@article{Wolf03ICAR,
+	Author = {D. Wolf and G. S. Sukhatme},
+	Date-Added = {2009-09-11 18:55:40 -0400},
+	Date-Modified = {2009-09-11 18:56:19 -0400},
+	Journal = {International Conference on Advanced Robotics},
+	Keywords = {Dynamic Environment SLAM},
+	Title = {Towards Mapping Dynamic Environments},
+	Year = {2003}}
+
+
+@article{Wolf04ICRA,
+	Author = {D. Wolf and G. S. Sukhatme},
+	Date-Added = {2009-09-11 18:39:23 -0400},
+	Date-Modified = {2009-09-11 18:40:20 -0400},
+	Journal = {International Conference on Robotics and Automation},
+	Keywords = {Dynamic Environment SLAM},
+	Title = {Online Simultaneous Localization and Mapping in Dynamic Environments},
+	Year = {2004}}
+
+@article{Wolf05AR,
+	Author = {D. Wolf and G. S. Sukhatme},
+	Date-Added = {2009-09-11 18:40:32 -0400},
+	Date-Modified = {2009-09-11 18:41:31 -0400},
+	Journal = {2005},
+	Keywords = {Dynamic Environment SLAM},
+	Title = {Mobile Robot Simultaneous Localization and Mapping in Dynamic Environments},
+	Year = {Autonomous Robots}}
+
+@MASTERSTHESIS{Wu07MastersThesis,
+	AUTHOR = {Zhongyang Wu},
+	TITLE = {Adaptation of the Inverse Kinematics of the DLR Light Weight Robot for Its Use as Haptic Device},
+	SCHOOL = {Lule\r{a} Tekniska Universitet},
+	YEAR = {2007}}
+
+@article{Yuta95IROS,
+author = {K. Nagatani and S.I. Yuta},
+title = {An experiment on opening-door-behavior by an autonomous mobile robot with a manipulator},
+journal ={Intelligent Robots and Systems, IEEE/RSJ International Conference on},
+volume = {2},
+isbn = {0-8186-7108-4},
+year = {1995},
+pages = {2045},
+doi = {http://doi.ieeecomputersociety.org/10.1109/IROS.1995.526137},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+}@InProceedings{ Beeson07AAAI,
+	title = "Integrating multiple representations of spatial knowledge for mapping, navigation, and communication",
+	booktitle = "Symposium on Interaction Challenges for Intelligent Assistants",
+	series = "AAAI Spring Symposium Series",
+	author = "Patrick Beeson and Matt MacMahon and Joseph Modayil and Aniket Murarka and Benjamin Kuipers and Brian Stankiewicz",
+	address = "Stanford, CA",
+	month = "March",
+	year = 2007
+}
+
+@article{Zhang05IJRR,
+  title={{An efficient data association approach to simultaneous localization and map building}},
+  author={Zhang, S. and Xie, L. and Adams, M.},
+  journal={The International Journal of Robotics Research},
+  volume={24},
+  number={1},
+  pages={49},
+  year={2005},
+  publisher={Multimedia Archives}
+}
