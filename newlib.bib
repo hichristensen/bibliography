@@ -1,3 +1,314 @@
+
+@misc{huPlanningorientedAutonomousDriving2023a,
+  title =        {Planning-oriented {Autonomous} {Driving}},
+  url =          {http://arxiv.org/abs/2212.10156},
+  abstract =     {Modern autonomous driving system is characterized as modular
+                  tasks in sequential order, i.e., perception, prediction, and
+                  planning. In order to perform a wide diversity of tasks and
+                  achieve advanced-level intelligence, contemporary approaches
+                  either deploy standalone models for individual tasks, or
+                  design a multi-task paradigm with separate heads. However,
+                  they might suffer from accumulative errors or deficient task
+                  coordination. Instead, we argue that a favorable framework
+                  should be devised and optimized in pursuit of the ultimate
+                  goal, i.e., planning of the self-driving car. Oriented at
+                  this, we revisit the key components within perception and
+                  prediction, and prioritize the tasks such that all these tasks
+                  contribute to planning. We introduce Unified Autonomous
+                  Driving (UniAD), a comprehensive framework up-to-date that
+                  incorporates full-stack driving tasks in one network. It is
+                  exquisitely devised to leverage advantages of each module, and
+                  provide complementary feature abstractions for agent
+                  interaction from a global perspective. Tasks are communicated
+                  with unified query interfaces to facilitate each other toward
+                  planning. We instantiate UniAD on the challenging nuScenes
+                  benchmark. With extensive ablations, the effectiveness of
+                  using such a philosophy is proven by substantially
+                  outperforming previous state-of-the-arts in all aspects. Code
+                  and models are public.},
+  language =     {en},
+  urldate =      {2024-06-04},
+  publisher =    {arXiv},
+  author =       {Hu, Yihan and Yang, Jiazhi and Chen, Li and Li, Keyu and Sima,
+                  Chonghao and Zhu, Xizhou and Chai, Siqi and Du, Senyao and
+                  Lin, Tianwei and Wang, Wenhai and Lu, Lewei and Jia, Xiaosong
+                  and Liu, Qiang and Dai, Jifeng and Qiao, Yu and Li, Hongyang},
+  month =        mar,
+  year =         {2023},
+  note =         {arXiv:2212.10156 [cs]},
+  keywords =     {Computer Science - Computer Vision and Pattern Recognition,
+                  Computer Science - Robotics},
+  annote =       {Comment: CVPR 2023 award candidate. Project page:
+                  https://opendrivelab.github.io/UniAD/},
+  file =         {Hu et al. - 2023 - Planning-oriented Autonomous
+                  Driving.pdf:/Users/hic/Zotero/storage/DQS2ZBVN/Hu et al. -
+                  2023 - Planning-oriented Autonomous
+                  Driving.pdf:application/pdf},
+}
+
+@misc{chenVADv2EndtoEndVectorized2024,
+  title =        {{VADv2}: {End}-to-{End} {Vectorized} {Autonomous} {Driving}
+                  via {Probabilistic} {Planning}},
+  shorttitle =   {{VADv2}},
+  url =          {http://arxiv.org/abs/2402.13243},
+  abstract =     {Learning a human-like driving policy from large-scale driving
+                  demonstrations is promising, but the uncertainty and
+                  non-deterministic nature of planning make it challenging. In
+                  this work, to cope with the uncertainty problem, we propose
+                  VADv2, an end-to-end driving model based on probabilistic
+                  planning. VADv2 takes multi-view image sequences as input in a
+                  streaming manner, transforms sensor data into environmental
+                  token embeddings, outputs the probabilistic distribution of
+                  action, and samples one action to control the vehicle. Only
+                  with camera sensors, VADv2 achieves state-of-the-art
+                  closed-loop performance on the CARLA Town05 benchmark,
+                  significantly outperforming all existing methods. It runs
+                  stably in a fully end-to-end manner, even without the
+                  rule-based wrapper. Closed-loop demos are presented at
+                  https://hgao-cv.github. io/VADv2.},
+  language =     {en},
+  urldate =      {2024-06-04},
+  publisher =    {arXiv},
+  author =       {Chen, Shaoyu and Jiang, Bo and Gao, Hao and Liao, Bencheng and
+                  Xu, Qing and Zhang, Qian and Huang, Chang and Liu, Wenyu and
+                  Wang, Xinggang},
+  month =        feb,
+  year =         {2024},
+  note =         {arXiv:2402.13243 [cs]},
+  keywords =     {Computer Science - Computer Vision and Pattern Recognition,
+                  Computer Science - Robotics},
+  annote =       {Comment: Project Page: https://hgao-cv.github.io/VADv2},
+  file =         {Chen et al. - 2024 - VADv2 End-to-End Vectorized Autonomous
+                  Driving vi.pdf:/Users/hic/Zotero/storage/U5G3XK25/Chen et al.
+                  - 2024 - VADv2 End-to-End Vectorized Autonomous Driving
+                  vi.pdf:application/pdf},
+}
+
+@misc{jiaAMPAutoregressiveMotion2024,
+  title =        {{AMP}: {Autoregressive} {Motion} {Prediction} {Revisited} with
+                  {Next} {Token} {Prediction} for {Autonomous} {Driving}},
+  shorttitle =   {{AMP}},
+  url =          {http://arxiv.org/abs/2403.13331},
+  abstract =     {As an essential task in autonomous driving (AD), motion
+                  prediction aims to predict the future states of surround
+                  objects for navigation. One natural solution is to estimate
+                  the position of other agents in a step-by-step manner where
+                  each predicted time-step is conditioned on both observed
+                  time-steps and previously predicted time-steps, i.e.,
+                  autoregressive prediction. Pioneering works like SocialLSTM
+                  and MFP design their decoders based on this intuition.
+                  However, almost all stateof-the-art works assume that all
+                  predicted time-steps are independent conditioned on observed
+                  time-steps, where they use a single linear layer to generate
+                  positions of all time-steps simultaneously. They dominate most
+                  motion prediction leaderboards due to the simplicity of
+                  training MLPs compared to autoregressive networks.},
+  language =     {en},
+  urldate =      {2024-06-04},
+  publisher =    {arXiv},
+  author =       {Jia, Xiaosong and Shi, Shaoshuai and Chen, Zijun and Jiang, Li
+                  and Liao, Wenlong and He, Tao and Yan, Junchi},
+  month =        mar,
+  year =         {2024},
+  note =         {arXiv:2403.13331 [cs]},
+  keywords =     {Computer Science - Computer Vision and Pattern Recognition,
+                  Computer Science - Robotics},
+  file =         {Jia et al. - 2024 - AMP Autoregressive Motion Prediction
+                  Revisited wi.pdf:/Users/hic/Zotero/storage/PTH9JDRK/Jia et al.
+                  - 2024 - AMP Autoregressive Motion Prediction Revisited
+                  wi.pdf:application/pdf},
+}
+
+@misc{philionTrajeglishTrafficModeling2024,
+  title =        {Trajeglish: {Traffic} {Modeling} as {Next}-{Token}
+                  {Prediction}},
+  shorttitle =   {Trajeglish},
+  url =          {http://arxiv.org/abs/2312.04535},
+  abstract =     {A longstanding challenge for self-driving development is
+                  simulating dynamic driving scenarios seeded from recorded
+                  driving logs. In pursuit of this functionality, we apply tools
+                  from discrete sequence modeling to model how vehicles,
+                  pedestrians and cyclists interact in driving scenarios. Using
+                  a simple data-driven tokenization scheme, we discretize
+                  trajectories to centimeter-level resolution using a small
+                  vocabulary. We then model the multi-agent sequence of discrete
+                  motion tokens with a GPT-like encoder-decoder that is
+                  autoregressive in time and takes into account intra-timestep
+                  interaction between agents. Scenarios sampled from our model
+                  exhibit state-of-the-art realism; our model tops the Waymo Sim
+                  Agents Benchmark, surpassing prior work along the realism meta
+                  metric by 3.3\% and along the interaction metric by 9.9\%. We
+                  ablate our modeling choices in full autonomy and partial
+                  autonomy settings, and show that the representations learned
+                  by our model can quickly be adapted to improve performance on
+                  nuScenes. We additionally evaluate the scalability of our
+                  model with respect to parameter count and dataset size, and
+                  use density estimates from our model to quantify the saliency
+                  of context length and intra-timestep interaction for the
+                  traffic modeling task.},
+  language =     {en},
+  urldate =      {2024-06-04},
+  publisher =    {arXiv},
+  author =       {Philion, Jonah and Peng, Xue Bin and Fidler, Sanja},
+  month =        apr,
+  year =         {2024},
+  note =         {arXiv:2312.04535 [cs]},
+  keywords =     {Computer Science - Robotics, Computer Science - Machine
+                  Learning},
+  annote =       {Comment: ICLR 2024},
+  file =         {Philion et al. - 2024 - Trajeglish Traffic Modeling as
+                  Next-Token
+                  Predict.pdf:/Users/hic/Zotero/storage/VXAHBNPV/Philion et al.
+                  - 2024 - Trajeglish Traffic Modeling as Next-Token
+                  Predict.pdf:application/pdf},
+}
+
+@misc{tanLanguageConditionedTraffic2023,
+  title =        {Language {Conditioned} {Traffic} {Generation}},
+  url =          {http://arxiv.org/abs/2307.07947},
+  abstract =     {Simulation forms the backbone of modern self-driving
+                  development. Simulators help develop, test, and improve
+                  driving systems without putting humans, vehicles, or their
+                  environment at risk. However, simulators face a major
+                  challenge: They rely on realistic, scalable, yet interesting
+                  content. While recent advances in rendering and scene
+                  reconstruction make great strides in creating static scene
+                  assets, modeling their layout, dynamics, and behaviors remains
+                  challenging. In this work, we turn to language as a source of
+                  supervision for dynamic traffic scene generation. Our model,
+                  LCTGen, combines a large language model with a
+                  transformer-based decoder architecture that selects likely map
+                  locations from a dataset of maps, produces an initial traffic
+                  distribution, as well as the dynamics of each vehicle. LCTGen
+                  outperforms prior work in both unconditional and conditional
+                  traffic scene generation in-terms of realism and fidelity.
+                  Code and video will be available at
+                  https://ariostgx.github.io/lctgen.},
+  language =     {en},
+  urldate =      {2024-06-04},
+  publisher =    {arXiv},
+  author =       {Tan, Shuhan and Ivanovic, Boris and Weng, Xinshuo and Pavone,
+                  Marco and Kraehenbuehl, Philipp},
+  month =        jul,
+  year =         {2023},
+  note =         {arXiv:2307.07947 [cs]},
+  keywords =     {Computer Science - Computer Vision and Pattern Recognition},
+  annote =       {Comment: Technical Report. Website available at
+                  https://ariostgx.github.io/lctgen},
+  file =         {Tan et al. - 2023 - Language Conditioned Traffic
+                  Generation.pdf:/Users/hic/Zotero/storage/RAX7LDJG/Tan et al. -
+                  2023 - Language Conditioned Traffic
+                  Generation.pdf:application/pdf},
+}
+
+@misc{yangDiffusionESGradientfreePlanning2024,
+  title =        {Diffusion-{ES}: {Gradient}-free {Planning} with {Diffusion}
+                  for {Autonomous} {Driving} and {Zero}-{Shot} {Instruction}
+                  {Following}},
+  shorttitle =   {Diffusion-{ES}},
+  url =          {http://arxiv.org/abs/2402.06559},
+  abstract =     {Diffusion models excel at modeling complex and multimodal
+                  trajectory distributions for decision-making and control.
+                  Reward-gradient guided denoising has been recently proposed to
+                  generate trajectories that maximize both a differentiable
+                  reward function and the likelihood under the data distribution
+                  captured by a diffusion model. Reward-gradient guided
+                  denoising requires a differentiable reward function fitted to
+                  both clean and noised samples, limiting its applicability as a
+                  general trajectory optimizer. In this paper, we propose
+                  DiffusionES, a method that combines gradient-free optimization
+                  with trajectory denoising to optimize black-box
+                  non-differentiable objectives while staying in the data
+                  manifold. Diffusion-ES samples trajectories during
+                  evolutionary search from a diffusion model and scores them
+                  using a black-box reward function. It mutates high-scoring
+                  trajectories using a truncated diffusion process that applies
+                  a small number of noising and denoising steps, allowing for
+                  much more efficient exploration of the solution space. We show
+                  that DiffusionES achieves state-of-the-art performance on
+                  nuPlan, an established closed-loop planning benchmark for
+                  autonomous driving. Diffusion-ES outperforms existing
+                  sampling-based planners, reactive deterministic or
+                  diffusion-based policies, and reward-gradient guidance.
+                  Additionally, we show that unlike prior guidance methods, our
+                  method can optimize non-differentiable language-shaped reward
+                  functions generated by few-shot LLM prompting. When guided by
+                  a human teacher that issues instructions to follow, our method
+                  can generate novel, highly complex behaviors, such as
+                  aggressive lane weaving, which are not present in the training
+                  data. This allows us to solve the hardest nuPlan scenarios
+                  which are beyond the capabilities of existing trajectory
+                  optimization methods and driving policies.},
+  language =     {en},
+  urldate =      {2024-06-04},
+  publisher =    {arXiv},
+  author =       {Yang, Brian and Su, Huangyuan and Gkanatsios, Nikolaos and Ke,
+                  Tsung-Wei and Jain, Ayush and Schneider, Jeff and Fragkiadaki,
+                  Katerina},
+  month =        feb,
+  year =         {2024},
+  note =         {arXiv:2402.06559 [cs]},
+  keywords =     {Computer Science - Artificial Intelligence, Computer Science -
+                  Robotics, Computer Science - Machine Learning, Computer
+                  Science - Computation and Language},
+  file =         {Yang et al. - 2024 - Diffusion-ES Gradient-free Planning with
+                  Diffusio.pdf:/Users/hic/Zotero/storage/8YUC557M/Yang et al. -
+                  2024 - Diffusion-ES Gradient-free Planning with
+                  Diffusio.pdf:application/pdf},
+}
+
+
+@misc{wangGFlow2024,
+  title =        {{GFlow}: {Recovering} {4D} {World} from {Monocular} {Video}},
+  shorttitle =   {{GFlow}},
+  url =          {http://arxiv.org/abs/2405.18426},
+  abstract =     {Reconstructing 4D scenes from video inputs is a crucial yet
+                  challenging task. Conventional methods usually rely on the
+                  assumptions of multi-view video inputs, known camera
+                  parameters, or static scenes, all of which are typically
+                  absent under in-the-wild scenarios. In this paper, we relax
+                  all these constraints and tackle a highly ambitious but
+                  practical task, which we termed as AnyV4D: we assume only one
+                  monocular video is available without any camera parameters as
+                  input, and we aim to recover the dynamic 4D world alongside
+                  the camera poses. To this end, we introduce GFlow, a new
+                  framework that utilizes only 2D priors (depth and optical
+                  flow) to lift a video (3D) to a 4D explicit representation,
+                  entailing a flow of Gaussian splatting through space and time.
+                  GFlow first clusters the scene into still and moving parts,
+                  then applies a sequential optimization process that optimizes
+                  camera poses and the dynamics of 3D Gaussian points based on
+                  2D priors and scene clustering, ensuring fidelity among
+                  neighboring points and smooth movement across frames. Since
+                  dynamic scenes always introduce new content, we also propose a
+                  new pixel-wise densification strategy for Gaussian points to
+                  integrate new visual content. Moreover, GFlow transcends the
+                  boundaries of mere 4D reconstruction; it also enables tracking
+                  of any points across frames without the need for prior
+                  training and segments moving objects from the scene in an
+                  unsupervised way. Additionally, the camera poses of each frame
+                  can be derived from GFlow, allowing for rendering novel views
+                  of a video scene through changing camera pose. By employing
+                  the explicit representation, we may readily conduct
+                  scene-level or object-level editing as desired, underscoring
+                  its versatility and power. Visit our project website at:
+                  https://littlepure2333.github.io/GFlow},
+  language =     {en},
+  urldate =      {2024-06-02},
+  publisher =    {arXiv},
+  author =       {Wang, Shizun and Yang, Xingyi and Shen, Qiuhong and Jiang,
+                  Zhenxiang and Wang, Xinchao},
+  month =        may,
+  year =         2024,
+  note =         {arXiv:2405.18426 [cs]},
+  keywords =     {Computer Science - Computer Vision and Pattern Recognition,
+                  Computer Science - Artificial Intelligence},
+  file =         {Wang et al. - 2024 - GFlow Recovering 4D World from Monocular
+                  Video.pdf:/Users/hic/Zotero/storage/BSB5SH6G/Wang et al. -
+                  2024 - GFlow Recovering 4D World from Monocular
+                  Video.pdf:application/pdf},
+}
+
 @article{Lim_2023,
   title =        {Optimality Guarantees for Particle Belief Approximation of
                   POMDPs},
@@ -80006,3 +80317,65 @@
   local-url =
                   {file://localhost/Users/hic/Documents/Papers%20Library/2024/2024-Zhang-Wang-Spatio-Temporal%20Context%20Graph%20Transformer%20Design%20for%20Map-Free%20Multi-Agent%20Trajectory%20Prediction_1.pdf}
 }
+
+@misc{chen2024periodic,
+  title =        {Periodic Vibration Gaussian: Dynamic Urban Scene
+                  Reconstruction and Real-time Rendering},
+  author =       {Yurui Chen and Chun Gu and Junzhe Jiang and Xiatian Zhu and Li
+                  Zhang},
+  year =         2024,
+  eprint =       {2311.18561},
+  archivePrefix ={arXiv},
+  primaryClass = {cs.CV}
+}
+
+@misc{tosi2024nerfs,
+  title =        {How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a
+                  Survey},
+  author =       {Fabio Tosi and Youmin Zhang and Ziren Gong and Erik Sandström
+                  and Stefano Mattoccia and Martin R. Oswald and Matteo Poggi},
+  year =         2024,
+  eprint =       {2402.13255},
+  archivePrefix ={arXiv},
+  primaryClass = {cs.CV}
+}
+
+@article{Horn:87,
+  author =       {Berthold K. P. Horn},
+  journal =      {J. Opt. Soc. Am. A},
+  keywords =     {Cameras; Composite materials; Crosstalk; Diffuse optical
+                  tomography; Materials; Reflection},
+  number =       4,
+  pages =        {629--642},
+  publisher =    {Optica Publishing Group},
+  title =        {Closed-form solution of absolute orientation using unit
+                  quaternions},
+  volume =       4,
+  month =        {Apr},
+  year =         1987,
+  url =          {https://opg.optica.org/josaa/abstract.cfm?URI=josaa-4-4-629},
+  doi =          {10.1364/JOSAA.4.000629},
+  abstract =     {Finding the relationship between two coordinate systems using
+                  pairs of measurements of the coordinates of a number of points
+                  in both systems is a classic photogrammetric task. It finds
+                  applications in stereophotogrammetry and in robotics. I
+                  present here a closed-form solution to the least-squares
+                  problem for three or more points. Currently various empirical,
+                  graphical, and numerical iterative methods are in use.
+                  Derivation of the solution is simplified by use of unit
+                  quaternions to represent rotation. I emphasize a symmetry
+                  property that a solution to this problem ought to possess. The
+                  best translational offset is the difference between the
+                  centroid of the coordinates in one system and the rotated and
+                  scaled centroid of the coordinates in the other system. The
+                  best scale is equal to the ratio of the root-mean-square
+                  deviations of the coordinates in the two systems from their
+                  respective centroids. These exact results are to be preferred
+                  to approximate methods based on measurements of a few selected
+                  points. The unit quaternion representing the best rotation is
+                  the eigenvector associated with the most positive eigenvalue
+                  of a symmetric 4 {\texttimes} 4 matrix. The elements of this
+                  matrix are combinations of sums of products of corresponding
+                  coordinates of the points.},
+}
+
