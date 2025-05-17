@@ -1,3 +1,48 @@
+@article{LIM2025104349,
+  title =        {CBS-Budget (CBSB): A complete and bounded suboptimal search
+                  for multi-agent path finding},
+  journal =      {Artificial Intelligence},
+  volume =       346,
+  pages =        104349,
+  year =         2025,
+  issn =         {0004-3702},
+  doi =          {https://doi.org/10.1016/j.artint.2025.104349},
+  url =
+                  {https://www.sciencedirect.com/science/article/pii/S0004370225000682},
+  author =       {Jaein Lim and Panagiotis Tsiotras},
+  keywords =     {Multi-agent path finding, Conflict based search, Bounded
+                  suboptimality},
+  abstract =     {Multi-Agent Path Finding (MAPF) is the problem of finding a
+                  collection of conflict-free paths for a team of multiple
+                  agents while minimizing some global cost, such as the sum of
+                  the travel time of all agents, or the travel time of the last
+                  agent. Conflict Based Search (CBS) is a leading complete and
+                  optimal MAPF algorithm that lazily explores the joint agent
+                  state space, using an admissible heuristic joint plan. Such an
+                  admissible heuristic joint plan is computed by combining
+                  individual shortest paths computed without considering
+                  inter-agent conflicts, and becoming gradually more informed as
+                  constraints are added to the individual agents' path-planning
+                  problems to avoid discovered conflicts. In this paper, we seek
+                  to speed up CBS by finding a more informed heuristic joint
+                  plan that is bounded. We first propose the budgeted
+                  Class-Ordered A* (bCOA*), a novel algorithm that finds the
+                  least-cost path with the minimal number of conflicts that is
+                  upper bounded in terms of path length. Then, we propose a
+                  novel bounded-cost variant of CBS, called CBS-Budget (CBSB) by
+                  using bCOA* search at the low-level search of the CBS and by
+                  using a modified focal search at the high-level search of the
+                  CBS. We prove that CBSB is complete and bounded-suboptimal. In
+                  our numerical experiments, CBSB finds a near-optimal solution
+                  for hundreds of agents within a fraction of a second. CBSB
+                  shows state-of-the-art performance, comparable to Explicit
+                  Estimation CBS (EECBS), an enhanced recent version of CBS. On
+                  the other hand, CBSB is much easier to implement than EECBS,
+                  since only one priority queue at the low-level search is
+                  needed, as in CBS, and only two priority queues at the
+                  high-level search are needed, as in Enhanced CBS (ECBS).}
+}
+
 @misc{goff2025learningdriveworldmodel,
   title =        {Learning to Drive from a World Model},
   author =       {Mitchell Goff and Greg Hogan and George Hotz and Armand du
@@ -9,6 +54,16 @@
   primaryClass = {cs.CV},
   url =          {https://arxiv.org/abs/2504.19077},
 }
+
+@InProceedings{he25:manipulation,
+  author =       {Zihao He and Bo Ai and Yulin Liu and Weikang Wan and Henrik I Christensen and Hao Su },
+  title =        {Learning Dexterous Deformable Object Manipulation Through Cross-Embodiment Dynamics Learning},
+  booktitle = {Intl Conference on Robotic and Automation (ICRA)},
+  year =      2025,
+  pages =     { },
+  month =     {May},
+  address =   {Atlanta, GA},
+  organization = {IEEE}}
 
 @article{peng2025uni,
   title =        {Uni-PrevPredMap: Extending PrevPredMap to a Unified Framework
