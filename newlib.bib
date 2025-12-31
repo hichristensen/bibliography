@@ -1,3 +1,58 @@
+@Article{nvidia2025,
+  author =       {NVIDIA and Wang, Yan and Luo, Wenjie and Bai, Junjie and Cao,
+                  Yulong and Che, Tong and Chen, Ke and Chen, Yuxiao and
+                  Diamond, Jenna and Ding, Yifan and Ding, Wenhao and Feng,
+                  Liang and Heinrich, Greg and Huang, Jack and Karkus, Peter and
+                  Li, Boyi and Li, Pinyi and Lin, Tsung-Yi and Liu, Dongran and
+                  Liu, Ming-Yu and Liu, Langechuan and Liu, Zhijian and Lu,
+                  Jason and Mao, Yunxiang and Molchanov, Pavlo and Pavao,
+                  Lindsey and Peng, Zhenghao and Ranzinger, Mike and Schmerling,
+                  Ed and Shen, Shida and Shi, Yunfei and Tariq, Sarah and Tian,
+                  Ran and Wekel, Tilman and Weng, Xinshuo and Xiao, Tianjun and
+                  Yang, Eric and Yang, Xiaodong and You, Yurong and Zeng,
+                  Xiaohui and Zhang, Wenyuan and Ivanovic, Boris and Pavone,
+                  Marco},
+  title =        {Alpamayo-R1: Bridging Reasoning and Action Prediction for
+                  Generalizable Autonomous Driving in the Long Tail},
+  journal =      {arXiv},
+  pages =        {2511.00088v1},
+  year =         2025,
+  abstract =     {End-to-end architectures trained via imitation learning have
+                  advanced autonomous driving by scaling model size and data,
+                  yet performance remains brittle in safety-critical long-tail
+                  scenarios where supervision is sparse and causal understanding
+                  is limited. To address this, we introduce Alpamayo-R1 (AR1), a
+                  vision-language-action model (VLA) that integrates Chain of
+                  Causation reasoning with trajectory planning to enhance
+                  decision-making in complex driving scenarios. Our approach
+                  features three key innovations: (1) the Chain of Causation
+                  (CoC) dataset, built through a hybrid auto-labeling and
+                  human-in-the-loop pipeline producing decision-grounded,
+                  causally linked reasoning traces aligned with driving
+                  behaviors; (2) a modular VLA architecture combining
+                  Cosmos-Reason, a Vision-Language Model pre-trained for
+                  Physical AI applications, with a diffusion-based trajectory
+                  decoder that generates dynamically feasible plans in real
+                  time; (3) a multi-stage training strategy using supervised
+                  fine-tuning to elicit reasoning and reinforcement learning
+                  (RL) to optimize reasoning quality via large reasoning model
+                  feedback and enforce reasoning-action consistency. Evaluation
+                  shows AR1 achieves up to a 12\% improvement in planning
+                  accuracy on challenging cases compared to a trajectory-only
+                  baseline, with a 35\% reduction in off-road rate and 25\%
+                  reduction in close encounter rate in closed-loop simulation.
+                  RL post-training improves reasoning quality by 45\% as
+                  measured by a large reasoning model critic and
+                  reasoning-action consistency by 37\%. Model scaling from 0.5B
+                  to 7B parameters shows consistent improvements. On-vehicle
+                  road tests confirm real-time performance (99 ms latency) and
+                  successful urban deployment. By bridging interpretable
+                  reasoning with precise control, AR1 demonstrates a practical
+                  path towards Level 4 autonomous driving. We plan to release
+                  AR1 models and a subset of the CoC in a future update.},
+}
+
+
 @Article{robinson2025,
   author =       {Robinson, Isaac and Robicheaux, Peter and Popov, Matvei and
                   Ramanan, Deva and Peri, Neehar},
@@ -250,28 +305,6 @@
                   prediction;sd map;motion forecasting},
   doi =          {10.1109/CVPR52734.2025.01605},
   comment =      {Causation of dataset for VLA. The VL compression},
-}
-
-@misc{wang-2025-alpamayo-r1,
-  title =        {Alpamayo-R1: Bridging Reasoning and Action Prediction for
-                  Generalizable Autonomous Driving in the Long Tail},
-  author =       {Yan Wang and Wenjie Luo and Junjie Bai and Yulong Cao and Tong
-                  Che and Ke Chen and Yuxiao Chen and Jenna Diamond and Yifan
-                  Ding and Wenhao Ding and Liang Feng and Greg Heinrich and Jack
-                  Huang and Peter Karkus and Boyi Li and Pinyi Li and Tsung-Yi
-                  Lin and Dongran Liu and Ming-Yu Liu and Langechuan Liu and
-                  Zhijian Liu and Jason Lu and Yunxiang Mao and Pavlo Molchanov
-                  and Lindsey Pavao and Zhenghao Peng and Mike Ranzinger and Ed
-                  Schmerling and Shida Shen and Yunfei Shi and Sarah Tariq and
-                  Ran Tian and Tilman Wekel and Xinshuo Weng and Tianjun Xiao
-                  and Eric Yang and Xiaodong Yang and Yurong You and Xiaohui
-                  Zeng and Wenyuan Zhang and Boris Ivanovic and Marco Pavone},
-  year =         2025,
-  eprint =       {2511.00088},
-  archivePrefix ={arXiv},
-  primaryClass = {cs.RO},
-  url =          {https://arxiv.org/abs/2511.00088},
-  comment =      {Not much improvement from the SD, surprising incremental for CVPR},
 }
 
 @inproceedings{shan-2018-lego-loam,
